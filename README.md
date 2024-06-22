@@ -8,5 +8,17 @@ Let's install Apache Skywalking 8.3.0 using the following commands.<br>
 # Prerequisites
 Java Development Kit (JDK): Apache Skywalking requires Java to run. Make sure you have Java 8 or later installed on your system
 ```bash
-sudo apt update && sudo apt install openjdk-11-jdk -y ```
-```bash export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 ```
+sudo apt update && sudo apt install openjdk-11-jdk -y
+```
+Set Environment Variables
+```bash 
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+```
+Download Apache Skywalking 8.3.0
+```bash
+wget https://archive.apache.org/dist/skywalking/8.3.0/apache-skywalking-apm-8.3.0.tar.gz
+```
+Extract the downloaded archive
+```bash
+tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
+```
