@@ -5,7 +5,8 @@ In GraphQL interfaces of Apache Skywalking 8.3.0 and previous, there is a H2 Dat
 
 # Vulnerability environment
 Let's install Apache Skywalking 8.3.0 using the following commands.<br>
-# Required
+# Prerequisites
+Java Development Kit (JDK): Apache Skywalking requires Java to run. Make sure you have Java 8 or later installed on your system
 ```bash
 sudo apt update && sudo apt install openjdk-11-jdk -y 
 ```
