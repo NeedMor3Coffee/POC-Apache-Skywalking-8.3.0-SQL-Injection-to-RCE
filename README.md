@@ -14,7 +14,7 @@ Set Environment Variables
 ```bash 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
-Download Apache Skywalking 8.3.0
+# Download Apache Skywalking 8.3.0
 ```bash
 wget https://archive.apache.org/dist/skywalking/8.3.0/apache-skywalking-apm-8.3.0.tar.gz
 ```
@@ -22,3 +22,23 @@ Extract the downloaded archive
 ```bash
 tar -zxvf apache-skywalking-apm-8.3.0.tar.gz
 ```
+Start Apache Skywalking
+```bash
+cd apache-skywalking-apm-bin/bin
+./startup.sh
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
