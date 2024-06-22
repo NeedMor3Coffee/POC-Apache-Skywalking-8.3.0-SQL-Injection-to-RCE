@@ -27,7 +27,7 @@ Start Apache Skywalking
 cd apache-skywalking-apm-bin/bin
 ./startup.sh
 ```
-
+After the environment is started, visit http://your-ip:8080 to view the Skywalking page.
 
 
 
