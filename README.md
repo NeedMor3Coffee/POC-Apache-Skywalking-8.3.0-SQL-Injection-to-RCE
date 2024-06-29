@@ -70,7 +70,7 @@ Connection: close
 I using BurpSuite to send the following GraphQL query below
 ![Alt Text](https://github.com/NeedMor3Coffee/POC_Apache_Skywalking-8.3.0_SQL_Injection_Vulnerability_to_RCE/blob/main/graphql_exploit.jpg)
 It can be seen that the SQL statement has raised error, and the value of the metricName parameter has been injected ​​after from.
-![Alt Text](https://github.com/NeedMor3Coffee/POC_Apache_Skywalking-8.3.0_SQL_Injection_Vulnerability_to_RCE/blob/main/error.jpg)
+![Alt Text](https://github.com/NeedMor3Coffee/POC_Apache_Skywalking-8.3.0_SQL_Injection_Vulnerability_to_RCE/blob/main/error.jpg) <br>
 This can lead to SQL_Injection attack by injecting SQL as follows:
 ![Alt Text](https://github.com/NeedMor3Coffee/POC_Apache_Skywalking-8.3.0_SQL_Injection_Vulnerability_to_RCE/blob/main/sql_injection1.png)
 
