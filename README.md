@@ -67,8 +67,7 @@ Connection: close
     }
 }
 ```
-# References
-https://youtu.be/CtkhTjB95Z0
+# References: https://youtu.be/CtkhTjB95Z0
 
 
 
