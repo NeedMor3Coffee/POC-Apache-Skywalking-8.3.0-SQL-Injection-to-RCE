@@ -67,6 +67,8 @@ Connection: close
     }
 }
 ```
+I using BurpSuite to send the following GraphQL query below
+![Alt Text](https://github.com/NeedMor3Coffee/POC_Apache_Skywalking-8.3.0_SQL_Injection_Vulnerability_to_RCE/blob/main/graphql_exploit.jpg)
 # References:
 https://youtu.be/CtkhTjB95Z0
 
